@@ -39,6 +39,11 @@ assessmentButton.addEventListener(
   
     tweetDivision.appendChild(anchor);
 
+    
+    const script = document.createElement('script');
+    script.setAttribute('src', 'https://platform.twitter.com/widgets.js');
+    tweetDivision.appendChild(script);
+
 
     const script = document.createElement('script');
     script.setAttribute('src', 'https://platform.twitter.com/widgets.js');
