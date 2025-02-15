@@ -23,11 +23,10 @@ assesmentButton.onclick = function(){
 
   tweetDivision.innerText='';
   const anchor = document.createElement('a');
-  const hrefValue ="https://twitter.com/intent/tweet?button_hashtag=あなたのいいところ&ref_src=twsrc%5Etfw"
-
+  const hrefValue =`https://twitter.com/intent/tweet?text=${encodeURIComponent(result)}`;
   anchor.setAttribute('href',hrefValue);
   anchor.setAttribute('class','twitter-hashtag-button')
-  anchor.setAttribute('data-text', '診断結果の文章')
+  anchor.setAttribute('data-text', result);
   anchor.innerText = 'Tweet #あなたのいいところ';
 
   tweetDivision.appendChild(anchor);
