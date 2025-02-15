@@ -28,7 +28,7 @@ assessmentButton.addEventListener(
     tweetDivision.innerText = '';
     const anchor = document.createElement('a');
     const hrefValue =
-      'https://twitter.com/intent/tweet?button_hashtag=' +
+            'https://x.com/intent/tweet?button_hashtag=' +
       encodeURIComponent('あなたのいいところ') +
       '&ref_src=twsrc%5Etfw';
   
